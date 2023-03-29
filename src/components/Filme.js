@@ -1,7 +1,6 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
-import { AntDesign } from '@expo/vector-icons';
-
+import { AntDesign } from "@expo/vector-icons";
 
 const Filme = ({ filme, onRemove }) => {
   return (
@@ -11,7 +10,12 @@ const Filme = ({ filme, onRemove }) => {
         <Text style={styles.text}>{filme.nome}</Text>
         <Text style={styles.text2}>{filme.genero}</Text>
         <TouchableOpacity onPress={onRemove}>
-        <AntDesign style={styles.delete} name="delete" size={24} color="red" />
+          <AntDesign
+            style={styles.delete}
+            name="delete"
+            size={24}
+            color="red"
+          />
         </TouchableOpacity>
       </View>
     </View>
@@ -23,13 +27,19 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     alignItems: "center",
     justifyContent: "center",
-    
+    shadowColor: "green",
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    shadowOpacity: 0.53,
+    shadowRadius: 13.97,
+    elevation: 21,
   },
   image: {
     width: "100%",
     height: 300,
     resizeMode: "stretch",
-    boxShadow: 0 0 20 #1db954,
   },
   text: {
     fontSize: 40,
@@ -42,11 +52,10 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     alignItems: "center",
     justifyContent: "center",
-
     color: "#fff",
   },
   delete: {
-    fontSize: 16, 
+    fontSize: 16,
   },
 });
 
