@@ -70,8 +70,8 @@ const styles = StyleSheet.create({
     color: "#1db954",
     textAlign: "center",
     backgroundColor: "#000",
-    height: 60,
-    paddingTop: 10,
+    height: 85,
+    paddingTop: 30,
   },
   scroll: {
     padding: 20,

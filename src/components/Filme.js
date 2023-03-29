@@ -25,6 +25,8 @@ const Filme = ({ filme, onRemove }) => {
 const styles = StyleSheet.create({
   container: {
     marginBottom: 20,
+    backgroundColor:"#2E2E2E",
+    borderRadius:12,
     alignItems: "center",
     justifyContent: "center",
     shadowColor: "green",
@@ -40,6 +42,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 300,
     resizeMode: "stretch",
+    borderRadius:12,
   },
   text: {
     fontSize: 40,
